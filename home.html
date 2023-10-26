@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI</title>
+    
+    <style>
+        body {
+            background-image: url('https://www.shutterstock.com/image-photo/cubes-form-expression-bmi-body-260nw-1544917481.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 110%;
+        }
+h1 {
+            text-align: center;
+            font-size: 45px;
+        }
+h2{
+        text-align: center;
+            font-size: 45px;
+        } 
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    color: #00000;
+    font-size: 20px;
+}
+ a {
+            color: white; /* Set the default link color */
+            font-size: 30px;
+            filter: grayscale(80%);
+            transition: .2s linear;
+        }
+
+        a:hover {
+            color: red;
+            filter: grayscale(80%);
+            transition: .2s linear; /* Set the link color when hovered over */
+        }
+
+        .clicked {
+            color: green !important;
+            filter: grayscale(80%);
+            transition: .2s linear; /* Set the link color when clicked */
+        }
+
+    </style>
+</head>
+<body>
+<br>
+<br>
+<div class="navbar">
+<nav style="color: white">
+
+              <ul style="color: black; text-align: center">
+                  <li style="color: white">
+                      <a style="color: white; font-size: 30px" href="C:\Users\Harsha Gowthami\Desktop\UID Assignment2\about2.html" onclick="changeColor(this)">About</a>
+                  </li>
+                  <li>
+                      <a style="color: white; font-size: 30px" href="C:\Users\Harsha Gowthami\Desktop\UID Assignment2\application.html" onclick="changeColor(this)">Application</a>
+                  </li>
+                  <li>
+                      <a style="color:white; font-size: 30px" href="file:///C:\Users\Harsha Gowthami\Desktop\UID Assignment2\BMI.html" onclick="changeColor(this)">Calculator</a>
+                  </li>
+                  
+              </ul>
+          </nav>
+       
+       </div>
+<script>
+    function changeColor(link) {
+        link.classList.add("clicked");
+    }
+   
+    const aboutLink = document.getElementById("about2Link");
+    const registrationLink = document.getElementById("applicationLink");
+    const contactUsLink = document.getElementById("calculatorLink");
+
+    aboutLink.onclick = function() {
+        aboutLink.classList.add("clicked");
+    };
+
+    registrationLink.onclick = function() {
+        registrationLink.classList.add("clicked");
+    };
+
+    contactUsLink.onclick = function() {
+        contactUsLink.classList.add("clicked");
+    };
+</script>
+</body>
+</html>

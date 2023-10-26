@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Application Form</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <style>
+            body::before {
+            content: "";
+            background-image: url('data:image/jpeg;base64,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');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            opacity: 0.5;
+            filter: blur(0.5px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+      .btn {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+ </style>
+</head>
+<body>
+	
+<div class="container">
+	<div class="row">
+		<div style="width: 40%; margin: 25px auto;">
+		<h3 style="text-align: center;">Application Form</h3>
+		<form method="POST" action="">
+			<div class="form-group">
+				<label><strong>Name:</strong></label><input type="text" name="Name" class="form-control" autofocus placeholder="name">
+			</div>
+			<div class="form-group">
+				<label><strong>Email:</strong></label><input type="text" name="E-mail" class="form-control" autofocus placeholder="Email">
+			</div>
+                        <div class="form-group">
+				<label><strong>Date of Birth:</strong></label><input type="text" name="Date of Birth" class="form-control" autofocus placeholder="Date of Birth">
+			</div>
+                        <div class="form-group">
+				<label><strong>Age:</strong></label><input type="integer" name="Age" class="form-control" autofocus placeholder="Age">
+			</div>
+                        <div class="form-group">
+				<label><strong>Height:</strong></label><input type="integer" name="Height" class="form-control" autofocus placeholder="Height">
+			</div>
+                        <div class="form-group">
+				<label><strong>weight:</strong></label><input type="integer" name="weight" class="form-control" autofocus placeholder="weight">
+			</div>
+
+      <label><strong>Enter Captcha:</strong></label>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" readonly id="capt">
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="textinput">
+        </div>
+      </div>
+
+	<div class="form-group">
+				<button onclick="validcap()" class="btn btn-lg btn-success btn-block">Submit</button>
+			</div>
+		</form>
+    <h6><strong>Captcha not visible </strong><img src="https://www.computerhope.com/jargon/r/refresh.png" width="40px" onclick="cap()"></h6>
+    <strong><p>New Here?<a href="">Sign Up</a> </p></strong>
+		<strong><p>Forgotten Password?<a href="">Recover here</a> </p></strong>
+	</div>
+</div>
+</div>
+<script type="text/javascript">
+  function cap(){
+    var alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V'
+                 ,'W','X','Y','Z','1','2','3','4','5','6','7','8','9','0','a','b','c','d','e','f','g','h','i',
+                 'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', '!','@','#','$','%','^','&','*','+'];
+                 var a = alpha[Math.floor(Math.random()*71)];
+                 var b = alpha[Math.floor(Math.random()*71)];
+                 var c = alpha[Math.floor(Math.random()*71)];
+                 var d = alpha[Math.floor(Math.random()*71)];
+                 var e = alpha[Math.floor(Math.random()*71)];
+                 var f = alpha[Math.floor(Math.random()*71)];
+
+                 var final = a+b+c+d+e+f;
+                 document.getElementById("capt").value=final;
+               }
+               function validcap(){
+                var stg1 = document.getElementById('capt').value;
+                var stg2 = document.getElementById('textinput').value;
+                if(stg1==stg2){
+                  alert("Form is validated Succesfully");
+                  return true;
+                }else{
+                  alert("Please enter a valid captcha");
+                  return false;
+                }
+               }
+</script>
+<a href="#" onclick="history.back();" class="btn">Go Back</a>
+    <a href="assignment.html"></a>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>
